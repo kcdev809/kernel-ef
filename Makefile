@@ -2,8 +2,8 @@
 VERSION = 6
 PATCHLEVEL = 13
 SUBLEVEL = 3
-EXTRAVERSION =
-NAME = Baby Opossum Posse
+EXTRAVERSION = -1.ef41.x86_64
+NAME = Golden Labrador
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
