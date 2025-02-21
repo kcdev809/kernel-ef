@@ -1,0 +1,2 @@
+#!/bin/bash
+make nconfig -j "$(nproc)" -s LLVM=1 LLVM_IAS=1 CC="ccache clang"

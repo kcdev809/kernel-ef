@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Installing modules.."
+make modules_install -j "$(nproc)" -k LLVM=1 LLVM_IAS=1 CC="ccache clang" || exit $?
+echo "Installing unstripped vdso.."
+make vdso_install -j "$(nproc)" -k LLVM=1 LLVM_IAS=1 CC="ccache clang" || exit $?
+echo "Custom kernel is ready."

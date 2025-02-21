@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Making modules.."
+make modules -j "$(nproc)" -k LLVM=1 LLVM_IAS=1 CC="ccache clang" || exit $?
+echo "Ready to install modules."
